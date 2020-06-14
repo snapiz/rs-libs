@@ -1,0 +1,8 @@
+[workspace]
+
+members = [
+    "relay",
+    "http",
+    "database",
+    "util"
+]

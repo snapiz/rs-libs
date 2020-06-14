@@ -1,0 +1,21 @@
+[package]
+name = "timada-relay"
+version = "0.1.0"
+authors = ["Jonathan <jonathan@timada.co>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-graphql = "1.10.12"
+base64 = "0.12.0"
+blob-uuid = "0.4.0"
+uuid = "0.8.1"
+diesel = "1.4.4"
+
+[dev-dependencies]
+lazy_static = "1.4.0"
+diesel = { version = "1.4.4", features = ["uuidv07", "chrono"] }
+futures-await-test = "0.3.0"
+timada-database = { path = "../database" }
+chrono = { version = "0.4.11", features = ["serde"] }
